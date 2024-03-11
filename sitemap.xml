@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Homepage -->
     <url>
-        <loc>https://sudipacharya.vercel.app/</loc>
+        <loc>https://sudipacharya.com.np/</loc>
         <lastmod>2022-02-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -10,11 +10,17 @@
     
     <!-- Blog Page -->
     <url>
-        <loc>https://sudipacharya.vercel.app/blogs/blogs.html</loc>
+        <loc>https://sudipacharya.com.np/blogs/blogs.html</loc>
         <lastmod>2022-02-18</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>1.0</priority>
     </url>
 
-    <!-- Add more pages as needed -->
+    <!-- EV HERE -->
+     <url>
+        <loc>https://www.sudipacharya.com.np/assets/cvsudp.pdf</loc>
+        <lastmod>2022-02-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>
