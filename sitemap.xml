@@ -16,6 +16,14 @@
         <priority>1.0</priority>
     </url>
 
+    <!--wordpress blog -->
+     <url>
+        <loc>https://www.sudipacharya.com.np/blogs/wordpress.html</loc>
+        <lastmod>2024-04-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
     <!-- EV HERE -->
      <url>
         <loc>https://www.sudipacharya.com.np/assets/cvsudp.pdf</loc>
@@ -23,4 +31,5 @@
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
+    
 </urlset>
