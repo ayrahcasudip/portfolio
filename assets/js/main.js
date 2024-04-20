@@ -254,3 +254,19 @@
   });
 
 })()
+
+// Function to fetch and display the blog content
+function fetchBlogContent() {
+    // Fetch the blog content HTML file
+    fetch('blogs/wordpress.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insert the fetched HTML content into the blogContent div
+            document.getElementById('blogContent').innerHTML = data;
+        })
+        .catch(error => console.error('Error fetching blog content:', error));
+}
+
+// Call the fetchBlogContent function to load the blog content when the page loads
+window.onload = fetchBlogContent;
+
