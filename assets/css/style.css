@@ -501,7 +501,7 @@ section {
   font-size: 13px;
 }
 .contact .php-email-form .error-message {
-  display: none;
+  display: ;
   color: #fff;
   background: #ed3c0d;
   text-align: left;
@@ -512,7 +512,7 @@ section {
   margin-top: 25px;
 }
 .contact .php-email-form .sent-message {
-  display: none;
+  display: ;
   color: #fff;
   background: #18d26e;
   text-align: center;
