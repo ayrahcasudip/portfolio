@@ -293,9 +293,11 @@ I am a budding enthusiast in the field of computer science, eager to expand my k
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="assets/forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://api.web3forms.com/submit" method="POST">
               <div class="row">
                 <div class="form-group col-md-6">
+                  <input type="hidden" name="access_key" value="829f233b-4318-49e3-84f9-2025421217bc">
+
                   <label for="name">Your Name</label>
                   <input type="text" name="name" class="form-control" id="name" required>
                 </div>
@@ -358,7 +360,23 @@ I am a budding enthusiast in the field of computer science, eager to expand my k
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="https://smtpjs.com/v3/smtp.js"> </script>
   <script src="assets/js/main.js"></script>
+  <script>
+    function sendEmail (){
+      Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+  </script>
 
 </body>
 
