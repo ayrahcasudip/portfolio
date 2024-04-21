@@ -293,7 +293,7 @@ I am a budding enthusiast in the field of computer science, eager to expand my k
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="https://api.web3forms.com/submit" method="POST" role="form" class="php-email-form">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <input type="hidden" name="access_key" value="829f233b-4318-49e3-84f9-2025421217bc">
@@ -362,7 +362,48 @@ I am a budding enthusiast in the field of computer science, eager to expand my k
   <!-- Template Main JS File -->
  
   <script src="assets/js/main.js"></script>
- 
+
+<script>
+    // JavaScript to handle form submission
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        var form = this;
+
+        // Show loading message
+        form.querySelector(".loading").style.display = "block";
+
+        // Submit the form data using fetch API
+        fetch(form.action, {
+            method: form.method,
+            body: new FormData(form)
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Hide loading message
+            form.querySelector(".loading").style.display = "none";
+
+            if (data.success) {
+                // If successful, show the success message
+                form.querySelector(".sent-message").style.display = "block";
+                // Optionally reset the form fields
+                form.reset();
+            } else {
+                // If there's an error, show the error message
+                form.querySelector(".error-message").innerHTML = data.message;
+                form.querySelector(".error-message").style.display = "block";
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            // Show error message
+            form.querySelector(".error-message").innerHTML = "An error occurred while sending the message. Please try again later.";
+            form.querySelector(".error-message").style.display = "block";
+            // Hide loading message
+            form.querySelector(".loading").style.display = "none";
+        });
+    });
+</script>
+  
 </body>
 
 </html>
