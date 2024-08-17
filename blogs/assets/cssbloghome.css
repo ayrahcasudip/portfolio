@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    flex-direction: column;
+    
+    overflow-x: hidden;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    width: 350px;
+    height: fit-content;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 128, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.details .author {
+margin-left: 20px; /* Adjust as needed for mobile */
+}
+
+
+@media (max-width: 600px) {
+.details {
+margin-left: px;
+flex-direction: row;
+align-items: flex-start;
+
+
+}
+}
+
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 128, 0.4);
+}
+
+.card img {
+    margin-bottom: 5%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.categories {
+
+border-radius: 7px;
+padding: 5px 10px;
+font-weight: ;
+font-size: 13px;
+width: fit-content; /* Adjust the width to fit the content */
+text-align: left; /* Align the text to the left */
+
+margin-bottom: 9px;
+margin-top: ;
+background-color: #144f76;
+background: ; /* Navy gradient */
+color: white; /* Text color to make it readable */
+transition: background ; /* Smooth transition on hover */
+
+    
+}
+
+
+.categories:hover {
+background: #0000808b; /* Solid navy background on hover */
+}
+
+
+
+
+
+
+.card h3 {
+    margin: 2px 0 10px;
+    text-align: start;
+    font-size: 20px;
+    color: black;
+}
+
+.card h3:hover{
+    color: #106095;
+}
+
+.card .date, .card .author {
+    color: rgb(49, 49, 51);
+    font-size: 14px;
+    margin: ;
+}
+
+.icon-space {
+    margin-right: 8px; /* Adjust as needed */
+}
+
+@media (max-width: 900px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .details {
+        justify-content: flex-start;
+    }
+}

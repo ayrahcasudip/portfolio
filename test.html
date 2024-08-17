@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 200px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card p {
+            text-align: center;
+            margin: 10px 0;
+            transition: color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover p {
+            color: navy;
+        }
+
+        .section {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Our Services</h1>
+
+    <div class="card-container">
+        <div class="card" onclick="navigateToSection('section1')">
+            <img src="assets/img/webdev.jpg" alt="Service 1">
+            <p>Website Development</p>
+        </div>
+        <div class="card" onclick="navigateToSection('section2')">
+            <img src="assets/img/graphic.webp" alt="Service 2">
+            <p>Graphic Designing</p>
+        </div>
+        <div class="card" onclick="navigateToSection('section3')">
+            <img src="assets/img/seo.jpg" alt="Service 3">
+            <p>SEO Services</p>
+        </div>
+        <div class="card" onclick="navigateToSection('section4')">
+            <img src="assets/img/digital.png" alt="Service 4">
+            <p>Digital Marketing</p>
+        </div>
+    </div>
+
+    <div id="section1" class="section">
+        <h2>Website Development</h2>
+        <p>Details about Website Development services.</p>
+    </div>
+    <div id="section2" class="section">
+        <h2>Mobile App Development</h2>
+        <p>Details about Mobile App Development services.</p>
+    </div>
+    <div id="section3" class="section">
+        <h2>SEO Services</h2>
+        <p>Details about SEO services.</p>
+    </div>
+    <div id="section4" class="section">
+        <h2>Digital Marketing</h2>
+        <p>Details about Digital Marketing services.</p>
+    </div>
+
+    <script>
+        function navigateToSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.style.display = 'none');
+
+            // Show the clicked section
+            document.getElementById(sectionId).style.display = 'block';
+
+            // Scroll to the section
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

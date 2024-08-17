@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .mobile-navbar {
+            position: relative;
+        }
+        
+        .mobile-nav-toggle {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        
+        #mobile-header {
+            width: 250px;
+            background-color: #144f76;
+            position: fixed;
+            top: 0;
+            left: -100%;
+            height: 100%;
+            transition: left 0.3s ease;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        #mobile-header.open {
+            left: 0;
+        }
+        
+        .mobile-profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .mobile-profile img {
+            width: 120px;
+            border-radius: 50%;
+            border: 5px solid #47a3d7;
+            margin-bottom: 10px;
+        }
+        
+        .mobile-profile h1 {
+            color: white;
+            font-size: 24px;
+            margin: 0;
+            margin-top: 1px;
+        }
+
+        .mobile-profile h1 a {
+            color: white; /* Ensure the link color is white */
+            text-decoration: none;
+        }
+        
+        .mobile-social-links a {
+            margin-top: 15px;
+            margin-bottom: 15px;
+  margin: px -px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 40px;
+  text-align: center;
+  background-color: black;
+  border-radius: 50%;
+        }
+        
+        .mobile-social-links a:hover {
+            background: #149ddd;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .mobile-nav-menu {
+            padding: 40px -15px 0 0;
+        }
+        
+        .mobile-nav-menu * {
+            margin: 4px;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .mobile-nav-menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 25px 0;
+            font-size: 17px;
+        }
+        
+        .mobile-nav-menu a i {
+            font-size: 24px;
+            padding-right: 8px;
+            color: #6f7180;
+        }
+        
+        .mobile-nav-menu a:hover {
+            text-decoration: none;
+            color: #149ddd;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .mobile-nav-toggle {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 769px) {
+            #mobile-header {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Mobile nav toggle button -->
+    <i id="mobile-nav-button" class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  
+    <!-- Mobile Header -->
+    <header id="mobile-header">
+        <div class="d-flex flex-column">
+            <div class="mobile-profile">
+                <img src="../android-chrome-256x256.png" alt="" class="img-fluid rounded-circle">
+                <h1 class="text-light"><a href="index.html">Sudip Acharya</a></h1>
+                <div class="mobile-social-links mt-3 text-center">
+                    <a href="https://twitter.com/acharyasudip79" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.k"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://github.com/ayrahcasudip" class="Github"><i class="bx bxl-github"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                </div>
+            </div>
+            <nav id="mobile-navbar" class="mobile-nav-menu navbar">
+                <ul>
+                    <li><a href="../#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+                    <li><a href="../#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+                    <li><a href="../#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+                    <li><a href="../#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+                    <li><a href="../blogs/blogs.html" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Blogs</span></a></li>
+                </ul>
+            </nav><!-- .mobile-nav-menu -->
+        </div>
+    </header><!-- End Mobile Header -->
+  
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navButton = document.getElementById('mobile-nav-button');
+            const header = document.getElementById('mobile-header');
+    
+            navButton.addEventListener('click', function () {
+                if (header.classList.contains('open')) {
+                    header.classList.remove('open');
+                } else {
+                    header.classList.add('open');
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

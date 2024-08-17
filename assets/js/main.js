@@ -255,3 +255,19 @@
 
 })()
 
+
+//----------our services section -----------------//
+function navigateToSection(sectionId) {
+  // Hide all sections
+  const sections = document.querySelectorAll('.info-section');
+  sections.forEach(section => section.style.display = 'none');
+
+  // Show the clicked section
+  document.getElementById(sectionId).style.display = 'block';
+
+  // Scroll to the section
+  document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
+
+
+//----------our services section -----------------//
