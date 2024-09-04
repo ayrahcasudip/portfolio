@@ -31,5 +31,61 @@
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
+
+<!--blog page published-->
+     <url>
+        <loc>https://www.sudipacharya.com.np/blogs/index.html</loc>
+        <lastmod>2024-04-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+
+     <url>
+        <loc>https://www.sudipacharya.com.np/blogs/content/blog1.html</loc>
+       <lastmod>2024-04-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.sudipacharya.com.np/blogs/content/blog2.html</loc>
+       <lastmod>2024-04-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://www.sudipacharya.com.np/blogs/content/blog3.html</loc>
+       <lastmod>2024-04-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+
+    <!--contact section-->
+    <url>
+        <loc>https://www.sudipacharya.com.np/index.html#contact</loc>
+       <lastmod>2024-04-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!--our service section-->
+     <url>
+        <loc>https://www.sudipacharya.com.np/index.html#our-service</loc>
+       <lastmod>2024-04-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!--skills section-->
+      <url>
+        <loc>https://www.sudipacharya.com.np/index.html#skills</loc>
+       <lastmod>2024-04-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
     
 </urlset>
