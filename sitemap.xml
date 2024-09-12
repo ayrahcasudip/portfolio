@@ -62,30 +62,14 @@
         <priority>1.0</priority>
     </url>
 
-
-    <!--contact section-->
-    <url>
-        <loc>https://www.sudipacharya.com.np/index.html#contact</loc>
-       <lastmod>2024-04-24</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    
-    <!--our service section-->
      <url>
-        <loc>https://www.sudipacharya.com.np/index.html#our-service</loc>
+        <loc>https://www.sudipacharya.com.np/blogs/content/save-10-vat-cards-mobile-wallets-restaurants-nepal.html</loc>
        <lastmod>2024-04-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!--skills section-->
-      <url>
-        <loc>https://www.sudipacharya.com.np/index.html#skills</loc>
-       <lastmod>2024-04-24</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-    </url>
+
 
     
 </urlset>
