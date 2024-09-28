@@ -7,6 +7,14 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+
+     <!-- Privacy policy page  -->
+      <url>
+        <loc>https://www.sudipacharya.com.np/privacyPolicy.html</loc>
+        <lastmod>2024-09-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
     
     <!-- Blog Page -->
     <url>
