@@ -91,6 +91,12 @@
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
+ <url>
+        <loc>https://www.sudipacharya.com.np/blogs/content/master%20react%20js%20easy%20way.html</loc>
+       <lastmod>2024-10-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
 
 
 
