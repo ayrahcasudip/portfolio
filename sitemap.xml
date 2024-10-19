@@ -18,7 +18,7 @@
     
     <!-- Blog Page -->
     <url>
-        <loc>https://sudipacharya.com.np/blogs/blogs.html</loc>
+        <loc>https://sudipacharya.com.np/blogs</loc>
         <lastmod>2022-02-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
