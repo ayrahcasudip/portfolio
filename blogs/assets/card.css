@@ -1,0 +1,152 @@
+/* From Uiverse.io by Yaya12085 */ 
+.card {
+    max-width: 400px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+  }
+  
+  .card a {
+    text-decoration: none
+  }
+  
+  .content {
+    padding: 1.1rem;
+  }
+  
+  .image {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(239, 205, 255);
+  }
+  
+  .title {
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+  
+  .desc {
+    margin-top: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #2563EB;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .action span {
+    transition: .3s ease;
+  }
+  
+  .action:hover span {
+    transform: translateX(4px);
+  }
+
+  /* Default styles for large screens */
+.responsive-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Media query for mobile screens (max-width 600px) */
+  @media (max-width: 600px) {
+    .responsive-container {
+      flex-direction: column;  /* Stack items vertically on mobile */
+      align-items: center;     /* Center the items horizontally */
+    }
+  }
+
+  
+  /* google card css  */
+  .review-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .google-logo {
+    width: 100%;
+    height: 45px;
+    object-fit: contain; 
+  }
+  
+  .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .stars {
+    display: flex;
+    gap: 3px;
+  }
+  
+  .star {
+    font-size: 18px;
+    color: #ccc; /* Default star color */
+  }
+  
+  .star.filled {
+    color: #ff9800; /* Yellow filled stars */
+  }
+  
+  .rating-text {
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  .review-count {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .review-link {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #144f76;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .review-link:hover {
+    background-color: #144f99;
+    color: #ffffff;
+  }
+  
